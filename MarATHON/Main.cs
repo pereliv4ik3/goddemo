@@ -23,7 +23,6 @@ namespace MarATHON
             DATA6.Text = t.Days.ToString() + " days, " +
                 t.Hours.ToString() + " hours, " +
                 t.Minutes.ToString() + " minutes";
-
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -31,24 +30,20 @@ namespace MarATHON
               this.Hide();
               Sponsor frm = new Sponsor();
               frm.Show();
-              this.Close();
-                
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             this.Hide();
             run yyy = new run();
-            yyy.ShowDialog();
-            this.Close();
+            yyy.Show();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
             this.Hide();
             dopform yyy = new dopform();
-            yyy.ShowDialog();
-            this.Close();
+            yyy.Show();  
         }
         }
     }

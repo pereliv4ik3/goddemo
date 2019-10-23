@@ -34,8 +34,6 @@ namespace MarATHON
             this.view_2TableAdapter.Fill(this.g464_GolubtsovDataSet1.View_2);
             // TODO: This line of code loads data into the 'g464_GolubtsovDataSet.staff' table. You can move, or remove it, as needed.
             this.staffTableAdapter.Fill(this.g464_GolubtsovDataSet.staff);
-             
-
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -46,8 +44,6 @@ namespace MarATHON
             }
             else
             {
-
-
                 int n = 0;
                 for (int i = 0; i < maskedTextBox1.Text.Length - 1; i++)
                     if (maskedTextBox1.Text[i] == ' ') n++;
@@ -121,7 +117,6 @@ namespace MarATHON
 
         private void button6_Click(object sender, EventArgs e)
         {
-       
             Mains open = new Mains();
             open.Show();
             this.Close();
@@ -195,10 +190,13 @@ namespace MarATHON
 
         private void button4_Click(object sender, EventArgs e)
         {
-
            info open = new info();
             open.Show();
-           
+        }
+
+        private void Sponsor_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
         }
 }

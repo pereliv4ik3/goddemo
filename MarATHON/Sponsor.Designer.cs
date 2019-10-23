@@ -420,6 +420,7 @@
             this.Controls.Add(this.comboBox1);
             this.Name = "Sponsor";
             this.Text = "Marathfons skill 2019 - sponsor a runne4r";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Sponsor_FormClosed);
             this.Load += new System.EventHandler(this.Form2_Load);
             this.Enter += new System.EventHandler(this.Sponsor_Enter);
             ((System.ComponentModel.ISupportInitialize)(this.view2BindingSource1)).EndInit();
