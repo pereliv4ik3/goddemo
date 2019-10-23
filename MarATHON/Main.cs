@@ -28,9 +28,10 @@ namespace MarATHON
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Hide();
+              this.Hide();
               Sponsor frm = new Sponsor();
-                frm.Show();
+              frm.Show();
+              this.Close();
                 
         }
 
@@ -38,15 +39,16 @@ namespace MarATHON
         {
             this.Hide();
             run yyy = new run();
-            yyy.Show();
-            
+            yyy.ShowDialog();
+            this.Close();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
             this.Hide();
             dopform yyy = new dopform();
-            yyy.Show();
+            yyy.ShowDialog();
+            this.Close();
         }
         }
     }
